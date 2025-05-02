@@ -1,0 +1,95 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-image: url('/assets/ac.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  height: 80px;
+  border-radius: 0 0 10px 10px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4f46e5;
+  margin-right: 24px;
+}
+
+.nav-links a {
+  margin-right: 18px;
+  color: #374151;
+  text-decoration: none;
+  font-size: 15px;
+  color: #e5e7eb;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #8eaae7;
+  font-weight: 500;
+  border-bottom: 2px solid #4f46e5;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.notification {
+  position: relative;
+}
+
+.bell-icon {
+  width: 20px;
+  cursor: pointer;
+}
+
+.notification .dot {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  height: 8px;
+  width: 8px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.username {
+  font-weight: 600;
+  font-size: 14px;
+}
+.notification-box {
+  position: absolute;
+  top: 28px;
+  right: 0;
+  background-color: white;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+  padding: 10px 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  font-size: 14px;
+  z-index: 10;
+}

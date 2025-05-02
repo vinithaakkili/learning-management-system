@@ -1,0 +1,32 @@
+<header class="navbar">
+  <div class="navbar-left">
+    <img src="assets/logo.png" alt="Logo" class="logo" />
+    <span class="brand">EduTrack</span>
+
+    <nav class="nav-links">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <a routerLink="/courses" routerLinkActive="active">Courses</a>
+      <a routerLink="/calendar" routerLinkActive="active">Calendar</a>
+    </nav>    
+  </div>
+  <div class="navbar-wrapper">
+  <div class="navbar-right">
+    <div class="notification" (click)="toggleNotifications()">
+      <span class="dot" *ngIf="showDot"></span>
+      <img src="assets/bell.jpeg" alt="Notifications" class="bell-icon" />
+
+      <div *ngIf="showNotificationBox" class="notification-box">
+        No notifications
+      </div>
+    </div>
+
+    <img src="assets/images.png" alt="User" class="avatar" />
+    <span class="username">Sarah Johnson</span>
+  </div>
+  </div>
+</header>
+
+<hr />
+
+<router-outlet></router-outlet>
+
