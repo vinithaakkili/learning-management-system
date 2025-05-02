@@ -1,0 +1,12 @@
+<div class="courses-container">
+  <h2>Explore Our Courses</h2>
+
+  <div class="course-grid">
+    <div *ngFor="let course of courses" class="course-card">
+      <img [src]="course.image" [alt]="course.title" />
+      <h3>{{ course.title }}</h3>
+      <p>{{ course.description }}</p>
+      <button (click)="viewCourse(course)">View Course</button>
+    </div>
+  </div>
+</div>

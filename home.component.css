@@ -1,0 +1,182 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  border-radius: 15px;
+  animation: fadeIn 1.5s ease-in;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+.highlight {
+  background: linear-gradient(to right, #007cf0, #00dfd8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+.subtext {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 123, 255, 0.4);
+}
+
+.hero-image-wrapper {
+  animation: bounceIn 1.2s ease-out;
+}
+
+.hero-image {
+  width: 350px;
+  border-radius: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  60% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); }
+}
+/* Container for all dashboard cards */
+/* Main wrapper */
+.dashboard-wrapper {
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #f0f4ff, #ffffff);
+}
+
+/* Header section */
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  font-size: 32px;
+  color: #1a237e;
+}
+
+.dashboard-header p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsive card grid */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Card base style */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* Stat card icons */
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  border-left: 6px solid #ddd;
+}
+
+.stat-card .icon {
+  font-size: 32px;
+}
+
+.stat-card h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.stat-card p {
+  margin: 4px 0 0;
+  font-size: 14px;
+}
+
+/* Colored backgrounds */
+.stat-card.blue {
+  background: linear-gradient(135deg, #42a5f5, #1e88e5);
+}
+
+.stat-card.pink {
+  background: linear-gradient(135deg, #ec407a, #d81b60);
+}
+
+.stat-card.yellow {
+  background: linear-gradient(135deg, #fdd835, #fbc02d);
+}
+
+/* Chart block */
+.chart-card .chart-placeholder {
+  height: 140px;
+  background: repeating-linear-gradient(
+    45deg,
+    #e3f2fd,
+    #e3f2fd 10px,
+    #bbdefb 10px,
+    #bbdefb 20px
+  );
+  border-radius: 10px;
+  animation: shimmer 2s linear infinite;
+}
+
+/* Upcoming lessons */
+.lessons-card ul {
+  padding-left: 16px;
+  margin-top: 10px;
+}
+
+.lessons-card li {
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 15px;
+}
+
+/* Animation */
+@keyframes shimmer {
+  0% { background-position: -200px 0; }
+  100% { background-position: 200px 0; }
+}

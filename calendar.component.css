@@ -1,0 +1,63 @@
+.calendar-container {
+  padding: 30px;
+  max-width: 900px;
+  margin: 30px auto;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.calendar-container h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.calendar-table th {
+  background: linear-gradient(to right, #0077ff, #00c2ff);
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px 5px 0 0;
+}
+
+.calendar-table td {
+  text-align: center;
+  padding: 18px;
+  border: 1px solid #e0e0e0;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.calendar-table td.date:hover {
+  background-color: #e3f2fd;
+  cursor: pointer;
+}
+
+.calendar-table td.today {
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
